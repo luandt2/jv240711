@@ -8,6 +8,18 @@ body {
     width: 1200px;
 }
 
+.use-after {
+    margin-left: 100px;
+}
+.use-after::after {
+    display: inline-block;
+    content: "";
+    border-top: 4px solid aqua;
+    width: 5rem;
+    margin: 0 1rem;
+    transform: translate(-170px, 18px);
+}
+
 .container h2 {
     font-size: 32px;
     font-weight: 600;
