@@ -1,0 +1,60 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+    font-family: Arial;
+  }
+  
+  body {
+    margin: 0;
+    padding: 2rem;
+    color: #333333;
+    background-color: white;
+    min-height: 100vh;
+  }
+  
+  main {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: black
+  }
+
+  /* summary:focus{ */
+    /* color: rgb(20, 20, 190); */
+/* } */
+
+  details p {
+    color: black;
+    padding: 0 1.25rem;
+  }
+
+  details[open] {
+    color: rgb(20, 20, 190);
+    
+  }
+
+details > summary {
+    list-style-type: none;
+   
+}
+details[open] summary {
+    border-bottom: 1px solid gray;
+}
+details > summary::after {
+    content: '⬇';
+    display: inline-block;
+}
+
+details[open] > summary::after {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+details {
+    border: 1px solid gray;
+}
+
